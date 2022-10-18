@@ -16,6 +16,12 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+
+#background-title {
+    height: 100wh;
+    position: relative
+}
+
 #title-center {
     margin: 0;
     position: absolute;

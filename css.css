@@ -23,8 +23,9 @@ body {
 }
 
 #img-avatar-maniek {
-    padding: 100px;
-    border-radius: 10px;
+    height: 15vh;
+    border-radius: 50%;
+    border: 5px solid #fff;
 }
 
 #title-center {

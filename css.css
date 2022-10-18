@@ -18,15 +18,83 @@ body {
 }
 
 #background-title {
-    height: 100vh;
+    height: 93vh;
     position: relative
 }
 
-#img-avatar-maniek {
+
+#title-center > #img-avatar-maniek > img{
     height: 15vh;
     border-radius: 50%;
-    border: 5px solid #fff;
+    display: block;
+    /* position: relative; */
+    /* border: 4px solid transparent; */
+    border-radius: 5px;
+    background: linear-gradient(rgb(255, 255, 255),rgb(108, 108, 108));
+    /* background-clip: padding-box; */
+    padding: 6px;
+    /* just to show box-shadow still works fine */
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+    /* border-image: linear-gradient(rgba(63,94,251,1), rgba(252,70,245,1)) 30; */
+    /* background-origin: border-box; */
+    /* background-clip: content-box, border-box; */
+    /* border-image: radial-gradient(rgb(0,143,104), rgb(250,224,66)) 1; */
+    margin: auto;
+    border-radius: 50%;
+    transition: ease-in 0.25s;
 }
+
+/* #title-center > #img-avatar-maniek > img::after {
+    position: absolute;
+    top: -4px; bottom: -4px;
+    left: -4px; right: -4px;
+    background: linear-gradient(red, blue);
+    content: '';
+    z-index: -1;
+    border-radius: 16px;
+} */
+
+#title-center > #img-avatar-maniek > img:hover{
+    transform: scale(1.2);
+    transition: ease-out 0.45s;
+    animation-name: outline-rainbow;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#title-center > h1 {
+    color: #fff;
+    transition: ease-in 0.25s;
+    cursor: default;
+}
+
+#title-center > h5 {
+    cursor: default;
+}
+#title-center > h1:hover {
+    color: rgb(19, 251, 209);
+    transition: ease-out 0.45s;
+    transform: matrix3d(1,0,0.00,0,0.00,0.64,0.77,0,0,-0.77,0.64,0,0,0,0,1);
+    -webkit-transform: matrix3d(1,0,0.00,0,0.00,0.64,0.77,0,0,-0.77,0.64,0,0,0,0,1);
+
+}
+
+/* @keyframes outline-rainbow {
+    0% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(108, 108, 108));
+    }
+    50% {
+        background: linear-gradient(rgb(209, 19, 155),rgb(7, 220, 220));
+    }
+    80% {
+        background: linear-gradient(rgb(19, 209, 184),rgb(220, 7, 213));
+    }
+    100% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(108, 108, 108));
+    }
+} */
 
 #title-center {
     color: #fff;
@@ -35,5 +103,17 @@ body {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) }
+    transform: translate(-50%, -50%) 
+}
+
+#background-footer {
+    background-color: rgb(13, 13, 13);
+    color: #fff;
+    padding: 15px;
+    text-align: right;
+}
+
+#github-right > a {
+    text-decoration: none;
+    color: #fff;
 }

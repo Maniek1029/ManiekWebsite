@@ -22,6 +22,11 @@ body {
     position: relative
 }
 
+#img-avatar-maniek {
+    padding: 100px;
+    border-radius: 10px;
+}
+
 #title-center {
     color: #fff;
     margin: 0;

@@ -23,6 +23,7 @@ body {
 }
 
 #title-center {
+    color: #fff;
     margin: 0;
     position: absolute;
     top: 50%;

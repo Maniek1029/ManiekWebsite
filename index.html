@@ -5,20 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css" />
+    <link rel="icon" href=".\img\MK-DEV-LOGO.png">
+    <!-- app js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>ManiekDev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Website by created: Maniek -->
+    <!-- Copyright Maniek -->
+    <title>MKDev</title>
 </head>
 <body>
+  <section id="home">
+    <nav class="navbar navbar-expand-lg navbar-light opacity-80 fixed-top" class="background-navbar">
+        <div class="container-fluid opacity-100">
+            <img src=".\img\MK-DEV-LOGO-ICON-2.png" alt="" width="100" height="50" class="d-inline-block align-text-top">
+          <a class="navbar-brand" id="text-color-navbar-name" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" id="text-color-navbar" aria-current="page" href="./index.php"><i class="	fa fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="text-color-navbar" href="./regulamin.php"><i class="fa fa-book"></i> About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="text-color-navbar" href="./regulamin.php"><i class="fa fa-phone"></i> Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <script src=".\script\scroll.js"></script>
+      </nav>
     <div id="background-title">
+      <img src="../img/background-home-mk.png"/>
         <div id="title-center">
-         <div id="img-avatar-maniek"><img src="https://cdn.discordapp.com/avatars/293741174429319169/a_5f15afbe12700c534e1202f3a3ae3cdc.gif"></div>
-         <h1>ManiekDev </h1><h5>Coming Soon Website 🔨</h5>
+         <div id="img-avatar-maniek"><img src=".\img\MK-DEV-LOGO-ICON-2.png"></div>
+         <!-- <h1 class="text-center">MKDev </h1> -->
+         <h5>Coming Soon Website 🔨</h5>
         </div>
     </div>
+</section>
+<section id="about">
+  <div class="title-about-me p-5">
+    <h1 class="text-center"><i class="fa fa-book"></i></br> ABOUT ME<h2 class="text-center">O MNIE</h2></h1>
+  </div>
+  <div class="container">
+    <div class="border-about-me p-5 position-relative">
+      <div class="border-profile p-none p-lg-5 col-12 col-sm-12 col-md-12 col-lg-5 float-start">
+        <img class="w-100" style="border-radius: 50%;" src="https://cdn.discordapp.com/avatars/293741174429319169/a_5f15afbe12700c534e1202f3a3ae3cdc.gif"/>
+      </div>
+      <div class="border-about-me-description p-3 col-12 col-sm-12 col-md-12 col-lg-5 float-end" style="/*background-color: rgb(157, 165, 42); */text-align: center;">
+        <h1 style="color: #fff;">Cześć!</h1>
+        <h5 style="color: #fff;">Jestem Maniek, mam 17 lat(a dokładnie za nie długo 18). 
+          Interesuje się programowaniem, IT, a także robieniem grafik komputerowych.
+           W programowaniu siedzę od 2018r.
+            Pierwsze moje kroki w programowaniu i ogólnym zainteresowaniem był html, gdzie pisałem w stronie Java Scriptem różne rzeczy z pomocą poradników.
+             Gdy w jakiś sposób potrafiłem zrobić stronę internetową, moim kolejnym z kolejnym etapem była nauka robienie serwerów FiveM, gdzie posiadałem już je do teraz kilka lub byłem developerem.
+              Aktualny Projekt który tworzę i jest aktywny jest to <a href="https://www.magneticrp.pl" style="text-decoration: none; color: blueviolet;">MagneticRP</a>.
+                Jeżeli chcesz ze mną się skontaktować, napisz do mnie w aktualnych wymienionych kontaktach w zakładce <a href="#contact" style="text-decoration: none; color: aqua;"><i class="fa fa-phone"></i> Contact</a>.</h5>
+      </div>
+      <div id="background-about-me" class="clearfix"></div>
+    </div>
+  </div>
+</section>
+<section id="contacts">
+  <div class="title-contacts p-5">
+    <h1 class="text-center"><i class="fa fa-phone"></i></br> CONTACTS ME<h2 class="text-center">KONTAKTY DO MNIE</h2></h1>
+  </div>
+  <div class="border-contacts-me position-relative">
+    <ul>
+      <div class="discord"><i class="bi bi-discord"></i></div>
+    </ul>
+    <ul>
+      <div class="e-mail"><i class="bi bi-envelope"></i></div>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="container">
+    <div class="border-contacts-show my-5 p-5">
+      <div class="border-show-contact">
+        <div class="image-profile">
+          <img class="avatar-dc" src="https://cdn.discordapp.com/avatars/293741174429319169/a_5f15afbe12700c534e1202f3a3ae3cdc.gif">
+          <img class="avatar-email" src="https://lh3.googleusercontent.com/a/ALm5wu3WKYiuynEGcwKs8co-fFueOC6YfYsWi232MClDfg"
+        </div>
+        <div class="nickname-dc">Maniek#7657</div>
+        <div class="nickname-email">sebastiankudzbalski123@gmail.com</div>
+      </div>
+    </div>
+  </div>
+</section>
     <footer>
         <div id="background-footer">
             <div id="github-right"><a href="https://github.com/" target="_blank"><i class="fa fa-github" style="width: 15px;"></i>Powered by GITHUB</a></div>
         </div>
     </footer>
+    <script src=".\script\selectconctact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@ body {
 }
 
 .background-navbar {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
 #text-color-navbar-name{
@@ -35,9 +35,15 @@ body {
     color: #fff;
 }
 .bg-scroll-down {
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     transition: all 0.8s ease-in-out;
 }
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    background-color: #fff;
+    box-shadow: inset 0px 0px 10px 2px #000000;
+}
+
 .nav-link {
     display: inline-block;
     position: relative;
@@ -63,15 +69,33 @@ body {
 #background-title {
     height: 100vh;
     background-color: rgb(26, 26, 26);
-    position: relative
+    position: relative;
 }
-#background-title > img{
+#background-title > .img-home{
     height: 100vh;
     width: 100vw;
-    filter: blur(2px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
+}
+#background-title::before{
+    content: 'style-img';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.particle-background-home {
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    /* background-position: center; */
+    object-fit: cover;
+    background-repeat: repeat;
+    /* background-size: cover; */
 }
 
 
@@ -181,6 +205,14 @@ body {
     background-color: rgb(12, 12, 12);
     margin-top: 20px;
     margin-bottom: 20px;
+    --mask:
+    radial-gradient(11.83px at 16.20px 50%,#000 99%,#0000 101%) 0 calc(50% - 12px)/51% 24px repeat-y,
+    radial-gradient(11.83px at -10.2px 50%,#0000 99%,#000 101%) 6px 50%/calc(51% - 6px) 24px repeat-y,
+		radial-gradient(11.83px at calc(100% - 16.20px) 50%,#000 99%,#0000 101%) 100% calc(50% - 12px)/51% 24px repeat-y,
+    radial-gradient(11.83px at calc(100% + 10.20px) 50%,#0000 99%,#000 101%) calc(100% - 6px) 50%/calc(51% - 6px) 24px repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    
 }
 
 .title-contacts {
@@ -193,6 +225,8 @@ body {
 .border-contacts-me {
     background-color: #262626;
     display: grid;
+    justify-items: center;
+    align-items: center;
     justify-content: center;
     align-content: center;
     gap: 5vw;
@@ -225,6 +259,7 @@ body {
     background-color: #262626;
     height: 100%;
     justify-content: center;
+    transition: ease-in-out 0.25s;
 }
 
 .border-show-contact {
@@ -235,11 +270,13 @@ body {
 .image-profile {
     height: 15vw;
 }
-ul .discord {
+.discord {
     transition: ease-in-out 0.25s;
+    cursor: pointer;
 }
-ul .e-mail {
+.e-mail {
     transition: ease-in-out 0.25s;
+    cursor: pointer;
 }
 .avatar-dc {
     display: block;

@@ -1,5 +1,5 @@
-var discord = document.querySelector('ul .discord')
-var email = document.querySelector('ul .e-mail')
+var discord = document.querySelector('.discord')
+var email = document.querySelector('.e-mail')
 
 var discord_show = document.querySelector('.avatar-dc');
 var discord_show_nick = document.querySelector('.nickname-dc');

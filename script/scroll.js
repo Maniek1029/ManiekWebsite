@@ -2,9 +2,9 @@ var nav = document.querySelector('nav');
 
 window.addEventListener('scroll', function(){
   if(window.pageYOffset > 100) {
-    nav.classList.add('bg-scroll-down')
+    nav.style.backgroundColor = "rgba(0, 0, 0, 0.9)"
   }
   else {
-    nav.classList.remove('bg-scroll-down')
+    nav.style.backgroundColor = "rgba(0, 0, 0, 0.5)"
   }
 })

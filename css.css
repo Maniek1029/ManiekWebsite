@@ -21,7 +21,6 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
-
 .background-navbar {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
@@ -43,7 +42,12 @@ body {
     background-color: #fff;
     box-shadow: inset 0px 0px 10px 2px #000000;
 }
-
+#text-color-navbar {
+    color: rgb(28, 217, 241);
+}
+nav {
+    background-color: rgb(26, 26, 26);
+}
 .nav-link {
     display: inline-block;
     position: relative;
@@ -56,7 +60,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: rgb(24, 183, 204);
   transform-origin: bottom;
   transition: transform 0.25s ease-out;
 }
@@ -148,6 +152,8 @@ body {
 
 #title-center > h5 {
     cursor: default;
+    text-align: center;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 1);
 }
 #title-center > h1:hover {
     color: rgb(19, 251, 209);
@@ -195,32 +201,37 @@ body {
 }
 
 #about {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(1, 34, 33);
 }
 .title-about-me {
     color: #fff;
-    background-color: rgb(16, 16, 16);
+    /* background-color: rgb(0, 111, 113); */
 }
 .border-about-me {
-    background-color: rgb(12, 12, 12);
+    /* background-color: rgb(12, 12, 12); */
     margin-top: 20px;
     margin-bottom: 20px;
-    --mask:
+    /* --mask:
     radial-gradient(11.83px at 16.20px 50%,#000 99%,#0000 101%) 0 calc(50% - 12px)/51% 24px repeat-y,
     radial-gradient(11.83px at -10.2px 50%,#0000 99%,#000 101%) 6px 50%/calc(51% - 6px) 24px repeat-y,
 		radial-gradient(11.83px at calc(100% - 16.20px) 50%,#000 99%,#0000 101%) 100% calc(50% - 12px)/51% 24px repeat-y,
     radial-gradient(11.83px at calc(100% + 10.20px) 50%,#0000 99%,#000 101%) calc(100% - 6px) 50%/calc(51% - 6px) 24px repeat-y;
   -webkit-mask: var(--mask);
-          mask: var(--mask);
+          mask: var(--mask); */
     
 }
 
 .title-contacts {
     color: #fff;
-    background-color: rgb(16, 16, 16);
+    text-shadow: 4px 28px 18px rgba(0, 0, 0, 1);
+    /* display: flex;
+    flex-direction: column; */
+        /* background-color: rgb(16, 16, 16); */
 }
 #contacts {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(1, 19, 20);
+    /* display: flex;
+    flex-direction: column; */
 }
 .border-contacts-me {
     background-color: #262626;
@@ -309,6 +320,46 @@ body {
     transition: all 0.8s ease-in-out;
 }
 
+/* NEW CONTACTS DESIGN */
+
+.contacts-us-background {
+    /* height: 50vh; */
+}
+
+.border-contacts {
+    background-color: #fff;
+    border-radius: 19px;
+    /* height: 100%;
+    width: 100%; */
+}
+
+.icon-contacts {
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.name-contacts {
+    font-family: Arial, Helvetica;
+    /* text-shadow: 4px 2px 5px rgba(0, 0, 0, 1); */
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.border-contacts {
+    -webkit-box-shadow: 8px 12px 16px 5px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 12px 16px 5px rgba(0, 0, 0, 1);
+    box-shadow: 8px 12px 16px 5px rgba(0, 0, 0, 1);
+    text-decoration: none;
+    color: #212529;
+    transition: 0.5s ease-in-out;
+}
+
+.border-contacts:hover {
+    -webkit-box-shadow: 8px 12px 16px 5px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 12px 16px 5px rgba(0, 0, 0, 1);
+    box-shadow: 8px 12px 16px 5px rgba(0, 0, 0, 1);
+    text-decoration: none;
+    color: #000000;
+    transition: 0.5s ease-in-out;
+}
 /* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 11px;
